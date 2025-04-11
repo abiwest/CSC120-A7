@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class Student {
+public class Student{
     // Attributes 
     private String name; 
     private String id; 
@@ -18,6 +18,10 @@ public class Student {
         return this.name; 
     }
 
+    public ArrayList<Course> getCourses() {
+        return this.classes;
+    }
+
     public String toString() {
         return this.name + " ID: " + this.id + " Class Year: " + this.classYear;
     }
@@ -25,8 +29,10 @@ public class Student {
     public static void main(String[] args) {
         Student ab = new Student("Ab", "9909abc", 2014);
         System.out.println(ab);
-        Course csc120 = new Course("OOP", "CSC120", "TR 10:50");
+
+        Course csc120 = new Course("OOP", "CSC120", "Tuesday/Thursday 10:50-12:05");
         ab.classes.add(csc120);
+
         System.out.println(ab.classes);
     }
     
