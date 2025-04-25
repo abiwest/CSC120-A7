@@ -75,7 +75,7 @@ public class House extends Building{
 
   public static void main(String[] args) {
     House h = new House("Haynes House", "1 Mandelle Road", 3, true); 
-    Student a = new Student("Abi", 991123456);
+    Student a = new Student("Abi", "123456789", 2027);
 
     h.moveIn(a);
 

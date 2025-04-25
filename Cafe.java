@@ -51,7 +51,7 @@ public class Cafe extends Building {
      * @param nCups
      * Restocks cafe with the given number of items
      */
-    private void restock(int nCoffeeOunces, int nSugarPackets, int nCreams, int nCups) {
+    public void restock(int nCoffeeOunces, int nSugarPackets, int nCreams, int nCups) {
         this.nCoffeeOunces += nCoffeeOunces;
         this.nSugarPackets += nSugarPackets;
         this.nCreams += nCreams;
